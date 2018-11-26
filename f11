@@ -1,1 +1,28 @@
+                                         GENERAL QUESTIONS
+1)WHAT IS DIFFERENCE BETWEEN NORMAL C AND EMBEDED C ?
+A) NORMAL C:-
+1) c is type of computer programming language .
+2) c is used for desktop applications , c is os dependent.
+3) c language program is hardware independent.
+4)in the c programming language, we can use standard functions like printf(), scanf() ..etc for output and input.
+5)some of the examples of applications logical programs, and system software programs. EX:- GCC (GNU COMPLIER COLLECTION),TURBO C,C++ COMPLIER
+  EMBEDED C :-
+1)while embeded  c is a set of language extensions for the c programming language.
+2)used for microprocessor/microcontroller applications.
+3) can work with (or)without an operating system.
+4)embedded  c program is hardware dependent.
+5)embedded  c is there is standard library functions like monitor ,keyboard …etc
+You have to write code to display output to connected display unit like 16*2lcd, graphics display.
+6) some of the examples of real time applications : DVD,  TV, digital camera,
+KEIL COMPLIER,
+	
+2)WHAT IS DIFFERENCE BETWEEN BIG ENDIAN AND LITTLE ENDIAN ?
+A)LITTLE ENDIAN :- lower order byte of data is stored lower order address and higer order byte of data is stored higer order address.
+EX:- 0X11223344
+Address   100    200   300   400
+Data          11      22      33     44
+ BIG ENDIAN :-lower order byte of data is stored higer order address and higer order byte is stored lower order address.
+EX :-0X11223344
+Address   100     200     300     400
+Data          44       33        22       11
 i have 2+ years of experience in post silicon validation
