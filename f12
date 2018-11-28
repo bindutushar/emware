@@ -1,0 +1,38 @@
+I2C Registers
+1.  I2C0CONSET (I2C0 Configuration Set Register)
+•	It is an 8-bit read-write register.
+•	It is used to control the operation of the I2C0 interface.
+ I2C0CONSET (I2C0 Configuration Set Register)
+•	Writing a 1 to a bit in this register causes corresponding bit in the I2C control register to set.
+•	Writing a 0 has no effect.
+•	Bit 2 – AA (Assert Acknowledge Flag)
+When set to 1, Acknowledge (SDA LOW) is returned during acknowledge clock pulse on SCL. Otherwise, Not acknowledge (SDA HIGH) is returned.
+•	Bit 3 – SI (I2C Interrupt Flag)
+This bit is set when the I2C state changes. Else it rema
+•	ins reset.
+•	Bit 4 – STO (Stop Flag)
+In Master Mode, setting this bit causes the I2C interface to transmit a STOP condition. In Slave Mode, setting this bit causes recover from an error condition if any.
+This bit is cleared by hardware automatically.
+•	Bit 5 – STA (Start Flag)
+Setting this bit causes the I2C interface to enter in master mode and transmit a START condition or transmit a repeated START condition if it is already in master mode.
+•	Bit 6 – I2CEN (I2C Interface Enable)
+Set this bit to enable I2C interface.
+ 
+2.  I2C0CONCLR (I2C0 Configuration Clear Register)
+•	It is an 8-bit write only register.
+ I2C0CONCLR (I2C0 Configuration Clear Register)
+•	Writing a 1 to a bit in this register causes corresponding bit in the I2C control register to clear.
+•	Writing a 0 has no effect.
+•	Bit 2 – AAC (Assert Acknowledge Flag Clear)
+Setting this bit clears the AA bit in I2C0CONSET register.
+•	Bit 3 – SIC (I2C Interrupt Flag Clear)
+Setting this bit clears the SI bit in I2C0CONSET register.
+•	Bit 5 – STAC (Start Flag Clear)
+Setting this bit clears the STA bit in I2C0CONSET register.
+•	Bit 6 – I2CENC (I2C Interface Disable)
+Setting this bit clears the I2CEN bit in I2C0CONSET register.
+ 
+3.  I2C0STAT (I2C0 Status Register)
+•	It is an 8-bit read only register.
+•	It reflects the present status of the I2C interface.
+ I2C0STAT (I2C0 Status Register)
