@@ -1,0 +1,36 @@
+3) SET  a bit by using bitwise operators ?//clear
+A)	          (SET A BIT MACRO)
+       #define  set_bit  (num,pos)  num |(0x0x1<<pos);
+	#include <stdio.h>
+void fun(int num,int k);
+int main()
+{
+        		int num,i,pos,count=0,count1=0,k;                                            
+		printf("enter a num:\n");              
+		scanf("%d",&num);
+		printf("enter a pos:\n");
+		scanf("%d",&pos);
+		k=num |(0x01<<pos);
+		fun(num,k);
+printf("%d\n",k);
+}
+    void fun(int num,int k)
+{
+        int i,count=0,count1=0;
+		for(i=31;    i>=0;    i--)
+		if(k & 1<<i)
+		{
+			printf("1");
+			count++;
+		}
+		else
+		{
+			printf("0");
+			count1++;
+		}
+		printf("\n");
+		printf("count no of ones=%d",count);
+		printf("count1 no of zeros =%d\n",count1);
+		printf("%d\n",k);
+}
+		
